@@ -5,6 +5,8 @@ import { CalendarEvent, CalendarModal, FabAddNew, FabDelete, Navbar } from "../"
 import { localizer, getMessagesES } from '../../helpers'
 import { useEffect, useState } from 'react'
 import { useUiStore, useCalendarStore, useAuthStore } from '../../hooks'
+import '../../index.css'
+import '@fontsource-variable/onest';
 
 export const CalendarPage = () => {
   const { user } = useAuthStore()
@@ -57,7 +59,7 @@ export const CalendarPage = () => {
         defaultView={lastView}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 'calc(100vh - 80px)' }}
+        style={{ height: 'calc(100vh - 80px)', /* width: '90%', margin: '0 auto' */ }}
         messages={getMessagesES()}
         eventPropGetter={eventStyleGetter}
         components={{

@@ -57,3 +57,147 @@
     width: 60px;
     height: 60px;
 }
+
+body{
+    font-family: 'Onest Variable', 'Times New Roman', Times, serif;
+}
+
+/* Calendar Styles */
+.rbc-toolbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #347CF7;
+    height: 50px;
+}
+
+@media (max-width: 720px) {
+    .rbc-toolbar{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto;
+        margin: 0 !important;
+    }
+
+    .rbc-toolbar span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rbc-btn-group:last-child{
+        margin-bottom: 10px;
+    }
+
+    .rbc-show-more{
+        font-size: 8px !important;  
+    }
+
+    span{
+        font-size: 10px;
+    }
+
+    .rbc-header{
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+    }
+
+    .rbc-event-content strong{
+        font-size: 8px;
+    }
+
+    .rbc-agenda-event-cell strong{
+        font-size: 12px;
+    }
+
+    .rbc-agenda-date-cell{
+        font-size: 12px;
+    }
+
+    .fab, .fab-danger{
+        border-radius: 100%;
+        bottom: 25px;
+        font-size: 15px;
+        position: fixed;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .fab-danger{
+        left: 25px;
+        padding: 0;
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+    }
+  }
+  
+
+.rbc-toolbar .rbc-toolbar-label{
+    font-weight: bold;
+    color: #f9f9f9;
+    font-size: 26px;
+}
+
+.rbc-btn-group {
+    padding: 0 10px;
+}
+
+.rbc-btn-group button{
+    border: none !important;
+    border-radius: 20px !important;
+    margin: 0 5px !important;
+    color: #f9f9f9 !important;
+    font-weight: 400 !important;
+}
+
+.rbc-btn-group button:hover{
+    background-color: #5aa9e6 !important;
+}
+
+.rbc-header{
+    background-color: #5aa9e6;
+    height: 40px;
+    color: #f9f9f9;
+    font-family: 'Onest Variable', 'Times New Roman', Times, serif;
+}
+
+.rbc-header button{
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.rbc-header button:focus{
+    color: #f9f9f9;
+}
+
+.rbc-header button:checked{
+    background-color: #5aa9e6 !important;
+}
+
+.rbc-active{
+    background-color: #5aa9e6 !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+}
+
+.rbc-month-row{
+    border-color: #dddddd !important;
+}
+
+.rbc-row-bg .rbc-day-bg{
+    border-color: #f9f9f9 !important;
+}
+
+.rbc-date-cell{
+    color: #979dac;
+}
+
+.rbc-today button{
+    color: #5aa9e6;
+}
